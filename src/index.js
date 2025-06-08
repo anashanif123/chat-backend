@@ -24,6 +24,7 @@ app.use(
       "http://localhost:5173",
       "https://chat-frontend-sigma-rouge.vercel.app",
       "https://chat-frontend-murex.vercel.app",
+      "https://chat-frontend-jpbkyyrkj-anas-projects-dfbef841.vercel.app",
     ],
     credentials: true,
   })
