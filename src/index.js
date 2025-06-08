@@ -7,8 +7,8 @@ import path from "path";
 
 import { connectDB } from "./lib/db.js";
 
-import authRoutes from "./routes/auth.route.js";
-import messageRoutes from "./routes/message.route.js";
+import authRoutes from "./routes/auth.routes.js";
+import messageRoutes from "./routes/message.routes.js";
 import { app, server } from "./lib/socket.js";
 
 dotenv.config();
@@ -23,6 +23,9 @@ app.use(
     credentials: true,
   })
 );
+app.get("/",(req,res)=>{
+    res.send("working fine")
+})
 
 app.use("/api/auth", authRoutes);
 app.use("/api/messages", messageRoutes);
