@@ -19,7 +19,11 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin:true,
+    origin: [
+      "http://localhost:5173",
+      "https://chat-frontend-murex.vercel.app",
+      "https://chat-frontend-jpbkyyrkj-anas-projects-dfbef841.vercel.app"
+    ],
     credentials: true,
   })
 );
