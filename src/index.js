@@ -20,9 +20,7 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      
       "https://chat-frontend-murex.vercel.app",
-      
     ],
     credentials: true,
   })
