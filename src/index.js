@@ -17,8 +17,8 @@ app.use(cookieParser());
 app.use(
   cors({
     origin: [
-      "http://localhost:5173",
-      "https://chat-frontend-sigma-rouge.vercel.app"
+         "https://chat-frontend-sigma-rouge.vercel.app",
+    "https://chat-frontend-q58quh21k-anas-projects-dfbef841.vercel.app"
     ],
     credentials: true,
   })
