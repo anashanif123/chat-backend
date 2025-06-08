@@ -20,7 +20,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://chat-frontend-murex.vercel.app",
-      "https://chat-frontend-sigma-rouge.vercel.app"
+      
     ],
     credentials: true,
   })
