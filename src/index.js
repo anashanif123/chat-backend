@@ -15,16 +15,10 @@ const __dirname = path.resolve();
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://chat-frontend-murex.vercel.app",
-      
-    ],
-    credentials: true,
-  })
-);
+app.use(cors({
+  origin: "https://chat-frontend-murex.vercel.app",
+  credentials: true
+}));
 app.get("/",(req,res)=>{
     res.send("working fine")
 })
