@@ -7,10 +7,15 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://chat-frontend-murex.vercel.app"],
-    
+    origin: [
+      "https://chat-frontend-murex.vercel.app",
+      "https://chat-frontend-jpbkyyrkj-anas-projects-dfbef841.vercel.app",
+      "http://localhost:5173"
+    ],
+    credentials: true // <-- THIS IS IMPORTANT
   },
 });
+
 
 export function getReceiverSocketId(userId) {
   return userSocketMap[userId];
